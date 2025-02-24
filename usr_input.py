@@ -1,8 +1,6 @@
 import os
 import sys
 
-
-
 '''Prompting the user with a given message stoered in main 
             and geting their input.
       Returns the user's input as a string '''

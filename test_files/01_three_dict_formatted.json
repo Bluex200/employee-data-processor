@@ -1,0 +1,47 @@
+[
+    {
+        "First Name": "Peter",
+        "Last Name": "Parker",
+        "Date Of Birth (mm/dd/yyyy)": "9/09/1977",
+        "Phone Number": 1234561234,
+        "Address Line 1": "1521 Farley Terrace",
+        "Address Line 2": "Flat 4",
+        "City": "Sandston",
+        "State": "VA",
+        "Zip Code": 23150,
+        "Job Title": "Software Developer",
+        "Job ID": "IT_REP",
+        "Company Email": "pparker@comp.com",
+        "Salary": 80000
+    },
+    {
+        "First Name": "Lesly",
+        "Last Name": "Jones",
+        "Date Of Birth (mm/dd/yyyy)": "5/18/1979",
+        "Phone Number": 9876543210,
+        "Address Line 1": "10801 Decker Ln",
+        "Address Line 2": "3rd Floor",
+        "City": "Austin",
+        "State": "TX",
+        "Zip Code": 78724,
+        "Job Title": "Sales Manager",
+        "Job ID": "SA_MNG",
+        "Company Email": "ljones@comp.com",
+        "Salary": 63000
+    },
+    {
+        "First Name": "Ellie",
+        "Last Name": "Davis",
+        "Date Of Birth (mm/dd/yyyy)": "3/21/1998",
+        "Phone Number": 5553214443,
+        "Address Line 1": "368 Paris Hill Ave.",
+        "Address Line 2": "Brooklyn",
+        "City": "New York",
+        "State": "NY",
+        "Zip Code": 11238,
+        "Job Title": "Hr Representative",
+        "Job ID": "HR_REP",
+        "Company Email": "edavis@comp.com",
+        "Salary": 71050
+    }
+]

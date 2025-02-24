@@ -1,0 +1,17 @@
+[
+    {
+        "First Name": "John",
+        "Last Name": "Smith",
+        "Date Of Birth (mm/dd/yyyy)": "05/27/1995",
+        "Phone Number": 7390521875,
+        "Address Line 1": "11002 62nd Ave",
+        "Address Line 2": "Puyallup",
+        "City": "Washington",
+        "State": "WA",
+        "Zip Code": 98373,
+        "Job Title": "Project Manager",
+        "Job ID": "IT_MNG",
+        "Company Email": "jsmith@comp.com",
+        "Salary": 85200
+    }
+]

@@ -42,6 +42,7 @@ def generate_formatted_file(emp_list, orig_path):
     with open(new_file, "w", encoding="utf-8") as f:
         json.dump(emp_list, f, indent=4)
 
+
 ''' Calculating salaryes according to the base salary per possition 
                         "SA": 60000,  
                         "HR": 70000,  
@@ -196,12 +197,3 @@ def process_each_emp(emp_list):
         valid_employees.append(emp)
     #returning list of dictionaries for valid employees
     return valid_employees
-    
-#reading employeed data as employee      
-employees = get_json_content('test_file.json')
-# return a list of dictionaries with data for each employee
-processed = process_each_emp(employees)
-print(processed)
-
-
-
