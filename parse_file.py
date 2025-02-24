@@ -26,8 +26,10 @@ def generate_email(first_name, last_name):
 
 
 ''' Generating new employee dictionary list '''
+import os
+import json
 
-def generate_formatted_file(emp_list, orig_path):
+def generate_formatted_file(emp_list, orig_path): 
     # Get the directory where the original file is located
     dir_name = os.path.dirname(orig_path)
     # Extract the base file name
@@ -40,7 +42,6 @@ def generate_formatted_file(emp_list, orig_path):
     # Write the formatted employee data to the new JSON file.
     with open(new_file, "w", encoding="utf-8") as f:
         json.dump(emp_list, f, indent=4)
-
 
 ''' Calculating salaryes according to the position and state they are from '''
 
@@ -95,10 +96,10 @@ def validate_phone_number(phone_number):
     #remove all remaining non-numeric characters**
     cleaned_number = re.sub(r"[^\d]", "", phone_number)
 
-    # 🚀 **Step 4: Reject if it's exactly 11 digits and does NOT start with '+1'**
+    # reject if it's exactly 11 digits and does NOT start with '+1'**
     if len(cleaned_number) == 11 and phone_number[0] != '+':
         print(f"{phone_number} is not a valid US phone number, skipping this employee entry...\n", end="")
-        return 1  # 🚫 Reject only if it's 11 digits and NOT a `+1` number
+        return 1  # reject only if it's 11 digits and NOT a `+1` number
 
     #if it's 11 digits but starts with '1', remove the leading '1'**
     if len(cleaned_number) == 11 and cleaned_number.startswith("1"):
@@ -205,6 +206,5 @@ employees = get_json_content('test_file.json')
 processed = process_each_emp(employees)
 print(processed)
 
-import os
-print("Current Working Directory:", os.getcwd())
+
 
