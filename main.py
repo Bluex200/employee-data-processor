@@ -1,26 +1,26 @@
-import os
+''' Main file for running and distributing proccesed data'''
+
 import sys
 import json
 from parse_file import process_each_emp
 from parse_file import generate_formatted_file
-import usr_input 
+import usr_input
 
-'''   Main function that starts the file processing.
-    - Calls `usr_input.get_usr_input()` to get the path from the user.
-    - Calls `usr_input.check_path()` to validate the path and get valid file paths.
-    - Calls `error_handle()` to handle errors before processing.
-    - Calls `start_process()` to process valid files '''
+''' Main function that starts the file processing.
+- Calls `usr_input.get_usr_input()` to get the path from the user.
+- Calls `usr_input.check_path()` to validate the path and get valid file paths.
+- Calls `error_handle()` to handle errors before processing.
+- Calls `start_process()` to process valid files '''
 
 def main():
-
     msg = "Please enter the path of the file or the folder containing the files: "
     #get the path from the user
     user_path = usr_input.get_usr_input(msg)
     #validating the path and get valid JSON files
     check_return = usr_input.check_path(user_path, [])
     #handle errors and process files
-    error_handle(check_return)  # Handle errors
-    start_process(check_return)  # Process files
+    error_handle(check_return)  #handle errors
+    start_process(check_return)  #process files
 
 ''' Handles errors based on the return value of check_path '''
 
@@ -52,7 +52,6 @@ def start_process(tup):
         return
     num_files = 0
     num_emps = 0
-
     for file_path in tup:
         if not file_path.endswith(".json") or file_path.endswith("_formatted.json"):
             continue  #skiping non-JSON or already formatted files
@@ -60,21 +59,21 @@ def start_process(tup):
             with open(file_path, 'r', encoding='utf-8') as file:
                 employees = json.load(file)
         except (FileNotFoundError, json.JSONDecodeError):
-            continue  #skiping if file cannot be read
+            continue #skiping if file cannot be read
         #passing employees to procces each employee function
         formatted_employees = process_each_emp(employees)
 
-        if not formatted_employees:  # Skip empty files
-            continue  
-        #add proccesed employees       
+        if not formatted_employees: #skip empty files
+            continue
+        #add proccesed employees
         num_emps += len(formatted_employees)
         num_files += 1
 
         # Call the separate function to generate the formatted file
         generate_formatted_file(formatted_employees, file_path)
     #print the proccesing summery
-    print_output(num_files, num_emps)  
-    
+    print_output(num_files, num_emps)
+
 #entry point for the script
 if __name__ == "__main__":
     main()

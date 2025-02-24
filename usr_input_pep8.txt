@@ -1,0 +1,787 @@
+=================================================== 
+Python LINTER for: {usr_input}    
+=================================================== 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+============================================================================ 
+
+Generating Linter results for: usr_input.py on: 24/02/2025 22:39:03
+========== pycodestyle (formerly pep8) ==========
+usr_input.py:4:59: W291 trailing whitespace
+'''Prompting the user with a given message stoered in main
+                                                          ^
+    Trailing whitespace is superfluous.
+
+The warning returned varies on whether the line itself is blank,
+for easier filtering for those who want to indent their blank lines.
+
+Okay: spam(1)\n#
+W291: spam(1) \n#
+W293: class Foo(object):\n    \n    bang = 12
+usr_input.py:8:1: E302 expected 2 blank lines, found 1
+def get_usr_input(msg):
+^
+    Separate top-level function and class definitions with two blank
+lines.
+
+Method definitions inside a class are separated by a single blank
+line.
+
+Extra blank lines may be used (sparingly) to separate groups of
+related functions.  Blank lines may be omitted between a bunch of
+related one-liners (e.g. a set of dummy implementations).
+
+Use blank lines in functions, sparingly, to indicate logical
+sections.
+
+Okay: def a():\n    pass\n\n\ndef b():\n    pass
+Okay: def a():\n    pass\n\n\nasync def b():\n    pass
+Okay: def a():\n    pass\n\n\n# Foo\n# Bar\n\ndef b():\n    pass
+Okay: default = 1\nfoo = 1
+Okay: classify = 1\nfoo = 1
+
+E301: class Foo:\n    b = 0\n    def bar():\n        pass
+E302: def a():\n    pass\n\ndef b(n):\n    pass
+E302: def a():\n    pass\n\nasync def b(n):\n    pass
+E303: def a():\n    pass\n\n\n\ndef b(n):\n    pass
+E303: def a():\n\n\n\n    pass
+E304: @decorator\n\ndef a():\n    pass
+E305: def a():\n    pass\na()
+E306: def a():\n    def b():\n        pass\n    def c():\n        pass
+usr_input.py:9:5: E265 block comment should start with '# '
+    #appending ": " to the message
+    ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+usr_input.py:11:5: E265 block comment should start with '# '
+    #display the prompt message to the user
+    ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+usr_input.py:20:1: E302 expected 2 blank lines, found 1
+def check_path(file_path, data_files):
+^
+    Separate top-level function and class definitions with two blank
+lines.
+
+Method definitions inside a class are separated by a single blank
+line.
+
+Extra blank lines may be used (sparingly) to separate groups of
+related functions.  Blank lines may be omitted between a bunch of
+related one-liners (e.g. a set of dummy implementations).
+
+Use blank lines in functions, sparingly, to indicate logical
+sections.
+
+Okay: def a():\n    pass\n\n\ndef b():\n    pass
+Okay: def a():\n    pass\n\n\nasync def b():\n    pass
+Okay: def a():\n    pass\n\n\n# Foo\n# Bar\n\ndef b():\n    pass
+Okay: default = 1\nfoo = 1
+Okay: classify = 1\nfoo = 1
+
+E301: class Foo:\n    b = 0\n    def bar():\n        pass
+E302: def a():\n    pass\n\ndef b(n):\n    pass
+E302: def a():\n    pass\n\nasync def b(n):\n    pass
+E303: def a():\n    pass\n\n\n\ndef b(n):\n    pass
+E303: def a():\n\n\n\n    pass
+E304: @decorator\n\ndef a():\n    pass
+E305: def a():\n    pass\na()
+E306: def a():\n    def b():\n        pass\n    def c():\n        pass
+usr_input.py:23:19: E262 inline comment should start with '# '
+        return 1  #error code for non-existent path
+                  ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+usr_input.py:26:13: E265 block comment should start with '# '
+            #cheking teh folders with subfolders
+            ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+usr_input.py:28:5: E265 block comment should start with '# '
+    #if file_path is a formatted file
+    ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+usr_input.py:30:19: E262 inline comment should start with '# '
+        return 2  #indicates file is already formatted
+                  ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+usr_input.py:31:5: E265 block comment should start with '# '
+    #add only if it is a .json file and not already added
+    ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+
+===================== pylint =====================
+************* Module usr_input
+usr_input.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+usr_input.py:4:0: W0105: String statement has no effect (pointless-string-statement)
+usr_input.py:8:0: C0116: Missing function or method docstring (missing-function-docstring)
+usr_input.py:18:0: W0105: String statement has no effect (pointless-string-statement)
+usr_input.py:20:0: C0116: Missing function or method docstring (missing-function-docstring)
+usr_input.py:21:4: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
+usr_input.py:2:0: W0611: Unused import sys (unused-import)
+
+-----------------------------------
+Your code has been rated at 6.67/10
+
+
+============================================================================ 
+=================================================== 
+Python LINTER for: {usr_input}    
+=================================================== 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+============================================================================ 
+
+Generating Linter results for: usr_input.py on: 24/02/2025 22:42:48
+========== pycodestyle (formerly pep8) ==========
+usr_input.py:4:59: W291 trailing whitespace
+'''Prompting the user with a given message stoered in main
+                                                          ^
+    Trailing whitespace is superfluous.
+
+The warning returned varies on whether the line itself is blank,
+for easier filtering for those who want to indent their blank lines.
+
+Okay: spam(1)\n#
+W291: spam(1) \n#
+W293: class Foo(object):\n    \n    bang = 12
+usr_input.py:8:1: E302 expected 2 blank lines, found 1
+def get_usr_input(msg):
+^
+    Separate top-level function and class definitions with two blank
+lines.
+
+Method definitions inside a class are separated by a single blank
+line.
+
+Extra blank lines may be used (sparingly) to separate groups of
+related functions.  Blank lines may be omitted between a bunch of
+related one-liners (e.g. a set of dummy implementations).
+
+Use blank lines in functions, sparingly, to indicate logical
+sections.
+
+Okay: def a():\n    pass\n\n\ndef b():\n    pass
+Okay: def a():\n    pass\n\n\nasync def b():\n    pass
+Okay: def a():\n    pass\n\n\n# Foo\n# Bar\n\ndef b():\n    pass
+Okay: default = 1\nfoo = 1
+Okay: classify = 1\nfoo = 1
+
+E301: class Foo:\n    b = 0\n    def bar():\n        pass
+E302: def a():\n    pass\n\ndef b(n):\n    pass
+E302: def a():\n    pass\n\nasync def b(n):\n    pass
+E303: def a():\n    pass\n\n\n\ndef b(n):\n    pass
+E303: def a():\n\n\n\n    pass
+E304: @decorator\n\ndef a():\n    pass
+E305: def a():\n    pass\na()
+E306: def a():\n    def b():\n        pass\n    def c():\n        pass
+usr_input.py:9:5: E265 block comment should start with '# '
+    #appending ": " to the message
+    ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+usr_input.py:11:5: E265 block comment should start with '# '
+    #display the prompt message to the user
+    ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+usr_input.py:20:1: E302 expected 2 blank lines, found 1
+def check_path(file_path, data_files):
+^
+    Separate top-level function and class definitions with two blank
+lines.
+
+Method definitions inside a class are separated by a single blank
+line.
+
+Extra blank lines may be used (sparingly) to separate groups of
+related functions.  Blank lines may be omitted between a bunch of
+related one-liners (e.g. a set of dummy implementations).
+
+Use blank lines in functions, sparingly, to indicate logical
+sections.
+
+Okay: def a():\n    pass\n\n\ndef b():\n    pass
+Okay: def a():\n    pass\n\n\nasync def b():\n    pass
+Okay: def a():\n    pass\n\n\n# Foo\n# Bar\n\ndef b():\n    pass
+Okay: default = 1\nfoo = 1
+Okay: classify = 1\nfoo = 1
+
+E301: class Foo:\n    b = 0\n    def bar():\n        pass
+E302: def a():\n    pass\n\ndef b(n):\n    pass
+E302: def a():\n    pass\n\nasync def b(n):\n    pass
+E303: def a():\n    pass\n\n\n\ndef b(n):\n    pass
+E303: def a():\n\n\n\n    pass
+E304: @decorator\n\ndef a():\n    pass
+E305: def a():\n    pass\na()
+E306: def a():\n    def b():\n        pass\n    def c():\n        pass
+usr_input.py:23:19: E262 inline comment should start with '# '
+        return 1  #error code for non-existent path
+                  ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+usr_input.py:26:13: E265 block comment should start with '# '
+            #cheking teh folders with subfolders
+            ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+usr_input.py:28:5: E265 block comment should start with '# '
+    #if file_path is a formatted file
+    ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+usr_input.py:30:19: E262 inline comment should start with '# '
+        return 2  #indicates file is already formatted
+                  ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+usr_input.py:31:5: E265 block comment should start with '# '
+    #add only if it is a .json file and not already added
+    ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+
+===================== pylint =====================
+************* Module usr_input
+usr_input.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+usr_input.py:4:0: W0105: String statement has no effect (pointless-string-statement)
+usr_input.py:8:0: C0116: Missing function or method docstring (missing-function-docstring)
+usr_input.py:18:0: W0105: String statement has no effect (pointless-string-statement)
+usr_input.py:20:0: C0116: Missing function or method docstring (missing-function-docstring)
+usr_input.py:21:4: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
+usr_input.py:2:0: W0611: Unused import sys (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 6.67/10 (previous run: 6.67/10, +0.00)
+
+
+============================================================================ 
+=================================================== 
+Python LINTER for: {usr_input}    
+=================================================== 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+============================================================================ 
+
+Generating Linter results for: usr_input.py on: 24/02/2025 22:42:55
+========== pycodestyle (formerly pep8) ==========
+usr_input.py:9:1: E302 expected 2 blank lines, found 1
+def get_usr_input(msg):
+^
+    Separate top-level function and class definitions with two blank
+lines.
+
+Method definitions inside a class are separated by a single blank
+line.
+
+Extra blank lines may be used (sparingly) to separate groups of
+related functions.  Blank lines may be omitted between a bunch of
+related one-liners (e.g. a set of dummy implementations).
+
+Use blank lines in functions, sparingly, to indicate logical
+sections.
+
+Okay: def a():\n    pass\n\n\ndef b():\n    pass
+Okay: def a():\n    pass\n\n\nasync def b():\n    pass
+Okay: def a():\n    pass\n\n\n# Foo\n# Bar\n\ndef b():\n    pass
+Okay: default = 1\nfoo = 1
+Okay: classify = 1\nfoo = 1
+
+E301: class Foo:\n    b = 0\n    def bar():\n        pass
+E302: def a():\n    pass\n\ndef b(n):\n    pass
+E302: def a():\n    pass\n\nasync def b(n):\n    pass
+E303: def a():\n    pass\n\n\n\ndef b(n):\n    pass
+E303: def a():\n\n\n\n    pass
+E304: @decorator\n\ndef a():\n    pass
+E305: def a():\n    pass\na()
+E306: def a():\n    def b():\n        pass\n    def c():\n        pass
+usr_input.py:10:5: E265 block comment should start with '# '
+    #appending ": " to the message
+    ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+usr_input.py:12:5: E265 block comment should start with '# '
+    #display the prompt message to the user
+    ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+usr_input.py:18:1: E305 expected 2 blank lines after class or function definition, found 1
+''' Validates the file path and returns a tuple of valid JSON files.'''
+^
+    Separate top-level function and class definitions with two blank
+lines.
+
+Method definitions inside a class are separated by a single blank
+line.
+
+Extra blank lines may be used (sparingly) to separate groups of
+related functions.  Blank lines may be omitted between a bunch of
+related one-liners (e.g. a set of dummy implementations).
+
+Use blank lines in functions, sparingly, to indicate logical
+sections.
+
+Okay: def a():\n    pass\n\n\ndef b():\n    pass
+Okay: def a():\n    pass\n\n\nasync def b():\n    pass
+Okay: def a():\n    pass\n\n\n# Foo\n# Bar\n\ndef b():\n    pass
+Okay: default = 1\nfoo = 1
+Okay: classify = 1\nfoo = 1
+
+E301: class Foo:\n    b = 0\n    def bar():\n        pass
+E302: def a():\n    pass\n\ndef b(n):\n    pass
+E302: def a():\n    pass\n\nasync def b(n):\n    pass
+E303: def a():\n    pass\n\n\n\ndef b(n):\n    pass
+E303: def a():\n\n\n\n    pass
+E304: @decorator\n\ndef a():\n    pass
+E305: def a():\n    pass\na()
+E306: def a():\n    def b():\n        pass\n    def c():\n        pass
+usr_input.py:20:1: E302 expected 2 blank lines, found 1
+def check_path(file_path, data_files):
+^
+    Separate top-level function and class definitions with two blank
+lines.
+
+Method definitions inside a class are separated by a single blank
+line.
+
+Extra blank lines may be used (sparingly) to separate groups of
+related functions.  Blank lines may be omitted between a bunch of
+related one-liners (e.g. a set of dummy implementations).
+
+Use blank lines in functions, sparingly, to indicate logical
+sections.
+
+Okay: def a():\n    pass\n\n\ndef b():\n    pass
+Okay: def a():\n    pass\n\n\nasync def b():\n    pass
+Okay: def a():\n    pass\n\n\n# Foo\n# Bar\n\ndef b():\n    pass
+Okay: default = 1\nfoo = 1
+Okay: classify = 1\nfoo = 1
+
+E301: class Foo:\n    b = 0\n    def bar():\n        pass
+E302: def a():\n    pass\n\ndef b(n):\n    pass
+E302: def a():\n    pass\n\nasync def b(n):\n    pass
+E303: def a():\n    pass\n\n\n\ndef b(n):\n    pass
+E303: def a():\n\n\n\n    pass
+E304: @decorator\n\ndef a():\n    pass
+E305: def a():\n    pass\na()
+E306: def a():\n    def b():\n        pass\n    def c():\n        pass
+usr_input.py:23:19: E262 inline comment should start with '# '
+        return 1  #error code for non-existent path
+                  ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+usr_input.py:26:13: E265 block comment should start with '# '
+            #cheking teh folders with subfolders
+            ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+usr_input.py:28:5: E265 block comment should start with '# '
+    #if file_path is a formatted file
+    ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+usr_input.py:30:19: E262 inline comment should start with '# '
+        return 2  #indicates file is already formatted
+                  ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+usr_input.py:31:5: E265 block comment should start with '# '
+    #add only if it is a .json file and not already added
+    ^
+    Separate inline comments by at least two spaces.
+
+An inline comment is a comment on the same line as a statement.
+Inline comments should be separated by at least two spaces from the
+statement. They should start with a # and a single space.
+
+Each line of a block comment starts with a # and one or multiple
+spaces as there can be indented text inside the comment.
+
+Okay: x = x + 1  # Increment x
+Okay: x = x + 1    # Increment x
+Okay: # Block comments:
+Okay: #  - Block comment list
+Okay: #  - Block comment list
+E261: x = x + 1 # Increment x
+E262: x = x + 1  #Increment x
+E262: x = x + 1  #  Increment x
+E262: x = x + 1  #  Increment x
+E265: #Block comment
+E266: ### Block comment
+
+===================== pylint =====================
+************* Module usr_input
+usr_input.py:5:0: W0105: String statement has no effect (pointless-string-statement)
+usr_input.py:9:0: C0116: Missing function or method docstring (missing-function-docstring)
+usr_input.py:18:0: W0105: String statement has no effect (pointless-string-statement)
+usr_input.py:20:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.00/10 (previous run: 6.67/10, +1.33)
+
+
+============================================================================ 

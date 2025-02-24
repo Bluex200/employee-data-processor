@@ -1,7 +1,8 @@
-import os
-import sys
+'''Requesting and proccesing user input'''
 
-'''Prompting the user with a given message stoered in main 
+import os
+
+'''Prompting the user with a given message stoered in main
             and geting their input.
       Returns the user's input as a string '''
 
@@ -14,14 +15,13 @@ def get_usr_input(msg):
     user_input = input().strip()
     return str(user_input)
 
-
 ''' Validates the file path and returns a tuple of valid JSON files.'''
 
 def check_path(file_path, data_files):
     if not os.path.exists(file_path):
         print(f"{file_path} does not exist.")
         return 1  #error code for non-existent path
-    elif os.path.isdir(file_path):
+    if os.path.isdir(file_path):
         for file in os.listdir(file_path):
             #cheking teh folders with subfolders
             check_path(os.path.join(file_path, file), data_files)
