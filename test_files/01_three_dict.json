@@ -1,0 +1,13 @@
+[
+    {"First Name": " Peter", "Last Name": "   parKeR", "Date Of Birth (mm/dd/yyyy)": "9/09/1977", "Phone Number": " 1234561234  ",
+    "Address Line 1": " 1521 farley Terrace", "Address Line 2": "flat   4 ", "City": "  SandSton", "State": "VA", "Zip Code": "23150",
+    "Job Title": "  software Developer", "Job ID": "IT_REP",
+    "I declare that the above information is accurate.": ":selected:"},
+    {"First Name": "lesly", "Last Name": " jones ", "Date Of Birth (mm/dd/yyyy)": "5/18/1979", "Phone Number": "9876543210  ",
+    "Address Line 1": "10801 DECKER LN ", "Address Line 2": "  3rd floor ", "City": "AUSTIN  ", "State": "TX", "Zip Code": "  78724",
+    "Job Title": "Sales   manager  ", "Job ID": "SA_MNG",
+    "I declare that the above information is accurate.": ":selected:"},
+    {"First Name": "ElLie ", "Last Name": "Davis", "Date Of Birth (mm/dd/yyyy)": "3/21/1998", "Phone Number": "5553214443",
+    "Address Line 1": " 368 paris Hill   AVE. ", "Address Line 2": " Brooklyn", "City": "  New   york  ", "State": "NY", "Zip Code": " 11238  ",
+    "Job Title": " HR REPRESENTATIVE ", "Job ID": "HR_REP",
+    "I declare that the above information is accurate.": ":selected:"}]

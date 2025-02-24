@@ -1,0 +1,6 @@
+============================================================
+---------------------Processing Summary---------------------
+============================================================
+Number of files processed:   3
+Number of employee entries
+ formatted and calculated:   6
